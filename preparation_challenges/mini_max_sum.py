@@ -18,13 +18,13 @@ Sample Output
 """
 
 
-def miniMaxSum(arr):
+def miniMaxSum(arr) -> None:
     arr.sort()
     min_sum, max_sum = 0, 0
     for item in arr[:4]:
         min_sum += item
 
-    for item in arr[1:5]:
+    for item in arr[1:5]:  # or arr[1:]
         max_sum += item
 
     print(f'{min_sum} {max_sum}')
